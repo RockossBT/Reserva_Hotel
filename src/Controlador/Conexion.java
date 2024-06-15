@@ -12,7 +12,7 @@ public class Conexion {
     public static Connection conectar(){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/reserva_hotel?useSSL=false","root","S0p0rt3");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/reserva_hotel?useSSL=false","root","CursoIntegrador"); // Nueva Contraseña de Conexión
         } catch (SQLException | ClassNotFoundException ex) {
             Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
         }
